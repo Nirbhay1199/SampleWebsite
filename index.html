@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style type="text/css">.dropdown:hover .dropdown-menu{display: block;}</style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Sample page.</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand"
+          ><img src="logo landrover.jpg" alt="Land Rover" width="80"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">VEHICLES</a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">All Vechicles</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Electric</a></li>
+                <li><a class="dropdown-item" href="#">Land Rover Classic</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      style="padding-top: 50px"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="slide1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="slide2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="slide3.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div style="padding-top: 50px">
+      <h2 style="text-align: center; color: darkgreen;">OUR VECHICLES</h2>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-4 g-4" style="padding: 20px;">
+      <div class="col">
+        <div class="card h-100">
+          <img src="card1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Range Rover</h5>
+            <p class="card-text">The ultimate Range Rover.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="card2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Range Rover Sport</h5>
+            <p class="card-text">The most dynamic Range Rover.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="card3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Range Rover Velar</h5>
+            <p class="card-text">The avant-garde Range Rover.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="card4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Range Rover Evoque</h5>
+            <p class="card-text">Time to make a statement.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-2">
+          <h5>DOWNLOAD</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2" style="font-size: 12px;"><a href="#" class="nav-link p-0 text-muted">DOWNLOAD</a></li>
+            <li class="nav-item mb-2" style="font-size: 12px;"><a href="#" class="nav-link p-0 text-muted">OFFICAL LAND ROVER COLLECTION</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-2">
+          <h5>FOLLOW US</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2" style="font-size: 12px;"><a href="#" class="nav-link p-0 text-muted">FIND ME A SUV</a></li>
+            <li class="nav-item mb-2" style="font-size: 12px;"><a href="#" class="nav-link p-0 text-muted">GET ME A QUOTE</a></li>
+            <li class="nav-item mb-2" style="font-size: 12px;"><a href="#" class="nav-link p-0 text-muted">BOOK A TEST DRIVE</a></li>
+            <li class="nav-item mb-2" style="font-size: 12px;"><a href="#" class="nav-link p-0 text-muted">NEWS</a></li>
+            <li class="nav-item mb-2" style="font-size: 12px;"><a href="#" class="nav-link p-0 text-muted">KEEP ME INFORMED</a></li>
+            <li class="nav-item mb-2" style="font-size: 12px;"><a href="#" class="nav-link p-0 text-muted">CONTACT RETAILER</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-2">
+          <h5>ABOUT US</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2" style="font-size: 12px;"><a href="#" class="nav-link p-0 text-muted">JAGUR LAND ROVER</a></li>
+            <li class="nav-item mb-2" style="font-size: 12px;"><a href="#" class="nav-link p-0 text-muted">SOCIAL RESPONSIBILITY</a></li>
+            <li class="nav-item mb-2" style="font-size: 12px;"><a href="#" class="nav-link p-0 text-muted">JAGUR LAND ROVER CSR</a></li>
+            <li class="nav-item mb-2" style="font-size: 12px;"><a href="#" class="nav-link p-0 text-muted">GLOSSARY</a></li>
+          </ul>
+        </div>
+  "
+        <div class="col-4 offset-1">
+          <form>
+            <h5>Subscribe to know about our lastest vehicles.</h5>
+            <p>Monthly digest of whats new and exciting from us.</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p>© 2021 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+</html>
